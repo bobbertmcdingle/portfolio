@@ -1,0 +1,163 @@
+/*----- Variaveis -----*/
+:root{
+    --primary:cadetblue;
+    --light:#EEEEEE;
+    --green:#436147;
+    --dark:#212121;
+}
+
+/*predefinicao do corpo */
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(22, 38, 26);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+main {
+    font-family: 'Supersonic Rocketship', sans-serif;;
+}
+
+/* config navbar */
+.navbar {
+    background-color: var(--green);
+}
+
+.navbar-logo {
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar-nav {
+    margin-left: 50px;
+}
+
+/* inicio */
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    margin-bottom: 100px;
+}
+
+.home h1 {
+    font-size: 4.5rem;
+    padding-bottom: 120px;
+}
+
+.home p {
+    font-size: 1.5rem;
+}
+
+
+/* secçao projetos 
+.projects {
+    outline: 5px solid red;
+}*/
+
+h2 {
+    font-size: 4rem;
+    color: black;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.row {
+    background-color: black;
+    color: white;
+}
+
+#featured-img {
+    width: 75%;
+    height: auto;
+}
+
+.clickable-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+/* rodape */
+footer {
+    background-color: var(--dark);
+    margin-top: 100px;
+    padding: 35px;
+    color: white;
+    text-align: center;
+}
+
+/* Imagem em fullscreen */
+#imageModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+#imageModal img {
+    width: 70vw;  
+    height: auto;
+    max-height: 90vh; 
+    object-fit: contain;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+    font-weight: bold;
+    user-select: none;
+}
+
+.close-button:hover {
+    color: #ccc;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10000;
+    padding: 0 15px;
+}
+
+.nav-button.left {
+    left: 20px;
+}
+
+.nav-button.right {
+    right: 20px;
+}
+
+.nav-button:hover {
+    color: #ccc;
+}
+
